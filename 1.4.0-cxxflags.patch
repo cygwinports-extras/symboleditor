@@ -1,0 +1,11 @@
+--- origsrc/SymbolEditor-1.4.0/CMakeLists.txt	2014-03-28 19:23:34.000000000 -0500
++++ src/SymbolEditor-1.4.0/CMakeLists.txt	2014-04-06 17:03:46.054601900 -0500
+@@ -44,7 +44,7 @@ kde4_add_executable (SymbolEditor ${Symb
+ 
+ target_link_libraries (SymbolEditor ${KDE4_KDEUI_LIBS} ${KDE4_KIO_LIBS})
+ 
+-set (CMAKE_CXX_FLAGS "-DQT_NO_COMPAT -DKDE_NO_COMPAT")
++set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions -DQT_NO_COMPAT -DKDE_NO_COMPAT")
+ 
+ install (TARGETS SymbolEditor DESTINATION ${BIN_INSTALL_DIR})
+ install (FILES SymbolEditorui.rc DESTINATION ${DATA_INSTALL_DIR}/SymbolEditor)

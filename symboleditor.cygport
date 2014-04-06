@@ -1,0 +1,13 @@
+inherit kde4
+
+NAME="symboleditor"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="KDE cross stitch symbol editor"
+DESCRIPTION="SymbolEditor is an application to allow the creation and editing
+of symbol libraries for the KXStitch application."
+HOMEPAGE="http://kxstitch.sourceforge.net/"
+SRC_URI="mirror://sourceforge/kxstitch/SymbolEditor-${VERSION}.tar.gz"
+SRC_DIR="SymbolEditor-${VERSION}"
+PATCH_URI="1.4.0-cxxflags.patch"
